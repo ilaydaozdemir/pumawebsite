@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 import LoginPicture from "../assets/Login/LoginPic.png";
 import Logo from "../assets/Logo.png";
 
 const LogIn = (props) => {
+  const navigate = useNavigate();
   return (
     <div>
       <Container>
@@ -21,7 +23,9 @@ const LogIn = (props) => {
               <Text>PASSWORD</Text>
               <GlobalInput />
             </div>
-            <SignInButton>SIGN IN</SignInButton>
+            <SignInButton onClick={() => navigate("/home")}>
+              SIGN IN
+            </SignInButton>
           </MainContent>
 
           <SignUpContainer>
@@ -57,6 +61,7 @@ const LogIn = (props) => {
   );
 };
 export const Container = styled.div`
+  font-family: "Inter";
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
