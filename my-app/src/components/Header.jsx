@@ -17,7 +17,6 @@ const Header = (props) => {
           <img src={CartLogo} width="36px" height="42px" />
         </IconContainer>
       </Container>
-      <HeaderText>EXCLUSIVE</HeaderText>
     </div>
   );
 };
@@ -37,12 +36,4 @@ export const Container = styled.div`
 `;
 export const IconContainer = styled.div`
   margin-top: 9px;
-`;
-export const HeaderText = styled.div`
-  margin-top: 10px;
-  text-align: center;
-  font-weight: 100;
-  font-size: 10px;
-  letter-spacing: 2.6px;
-  opacity: 0.8;
 `;

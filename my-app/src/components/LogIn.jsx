@@ -30,7 +30,12 @@ const LogIn = (props) => {
 
           <SignUpContainer>
             <div
-              style={{ fontSize: "12px", opacity: "0.7", marginRight: "20px" }}
+              style={{
+                fontSize: "12px",
+                opacity: "0.7",
+                marginRight: "20px",
+                letterSpacing: "0px",
+              }}
             >
               Don't you have an account?
             </div>
